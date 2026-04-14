@@ -1,0 +1,132 @@
+import { Link } from 'react-router';
+import { Linkedin, Twitter } from 'lucide-react';
+import logo from '../../imports/symbol_1_light_bg.svg';
+
+export function Footer() {
+  return (
+    <footer className="bg-card border-t border-border/50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+          {/* Brand Column */}
+          <div className="lg:col-span-1">
+            <Link to="/" className="flex items-center gap-3 mb-4">
+              <img src={logo} alt="Hospitalist Network" className="h-8 w-auto" />
+              <span className="font-bold text-sm">Hospitalist Network</span>
+            </Link>
+            <p className="text-xs text-muted-foreground mb-2 font-semibold">
+              The intelligence layer for hospitalist recruitment
+            </p>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              Connecting credentialed hospitalist physicians with hospital systems through
+              data-driven matching and transparent recruitment.
+            </p>
+          </div>
+
+          {/* Platform Column */}
+          <div>
+            <h4 className="text-sm font-semibold mb-4">Platform</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Book a Demo
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://app.hospitalistnetwork.com"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Open Portal
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company Column */}
+          <div>
+            <h4 className="text-sm font-semibold mb-4">Company</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal Column */}
+          <div>
+            <h4 className="text-sm font-semibold mb-4">Legal</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/cookie-policy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <span className="text-sm text-muted-foreground">HIPAA Compliance</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-muted-foreground">
+            © 2024 Hospitalist Network. All rights reserved.
+          </p>
+          
+          <div className="flex items-center gap-6">
+            <span className="text-xs text-muted-foreground">SOC 2 Type II</span>
+            <span className="text-xs text-muted-foreground">HIPAA Compliant</span>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={18} />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter size={18} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
