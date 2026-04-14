@@ -1,0 +1,168 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* Hospitalist Network Dark Theme */
+  --background: hsl(222 47% 6%); /* #0A0F1C - deep navy/near-black */
+  --card: hsl(222 44% 9%); /* #111827 - card surfaces */
+  --foreground: hsl(210 20% 92%); /* #E5E7EB - primary text */
+  --muted-foreground: hsl(215 15% 55%); /* #6B7280 - secondary text */
+  --border: hsl(215 20% 16%); /* #1F2937 - borders */
+  
+  /* Brand Colors */
+  --primary: hsl(160 84% 39%); /* #10B981 - emerald for CTAs */
+  --primary-foreground: hsl(222 47% 6%); /* dark text on emerald */
+  --accent-gold: hsl(45 93% 58%); /* #EAB308 - gold for premium */
+  --blue-ready: hsl(210 100% 56%); /* #3B82F6 - network ready tier */
+  --destructive: hsl(0 84% 60%); /* error states */
+  --destructive-foreground: hsl(0 0% 100%);
+  
+  /* Other tokens */
+  --popover: hsl(222 44% 9%);
+  --popover-foreground: hsl(210 20% 92%);
+  --secondary: hsl(215 20% 16%);
+  --secondary-foreground: hsl(210 20% 92%);
+  --muted: hsl(215 20% 16%);
+  --accent: hsl(160 84% 39%);
+  --accent-foreground: hsl(222 47% 6%);
+  --input: transparent;
+  --input-background: hsl(215 20% 16%);
+  --switch-background: hsl(215 20% 16%);
+  --ring: hsl(160 84% 39%);
+  
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --radius: 0.75rem;
+  
+  /* Chart colors */
+  --chart-1: hsl(160 84% 39%);
+  --chart-2: hsl(210 100% 56%);
+  --chart-3: hsl(45 93% 58%);
+  --chart-4: hsl(280 60% 50%);
+  --chart-5: hsl(340 60% 50%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-accent-gold: var(--accent-gold);
+  --color-blue-ready: var(--blue-ready);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  label {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
+
+/* Custom utility classes for glassmorphism */
+@layer utilities {
+  .glass-card {
+    background: hsl(222 44% 9% / 0.8);
+    backdrop-filter: blur(24px);
+    border: 1px solid hsl(215 20% 16% / 0.5);
+    box-shadow: 0 4px 24px -4px hsl(222 47% 2% / 0.6);
+  }
+
+  .emerald-glow {
+    box-shadow: 0 0 30px -5px hsl(160 84% 39% / 0.4);
+  }
+
+  .emerald-glow-hover:hover {
+    box-shadow: 0 0 30px -5px hsl(160 84% 39% / 0.4);
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 30px -5px hsl(45 93% 58% / 0.3);
+  }
+
+  .gradient-text-emerald {
+    background: linear-gradient(135deg, hsl(160 84% 39%), hsl(160 84% 50%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text-gold {
+    background: linear-gradient(135deg, hsl(45 93% 58%), hsl(45 93% 68%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-gradient-radial {
+    background: radial-gradient(circle at center, var(--tw-gradient-stops));
+  }
+}
