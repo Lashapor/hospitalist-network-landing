@@ -3,6 +3,7 @@ import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { CookieBanner } from '../components/CookieBanner';
 import { ScrollToTop } from '../components/ScrollToTop';
+import { BookDemo } from '../components/BookDemo';
 
 export function Root() {
   return (
@@ -14,6 +15,7 @@ export function Root() {
       <Footer />
       <CookieBanner />
       <ScrollToTop />
+      <BookDemo />
     </div>
   );
 }

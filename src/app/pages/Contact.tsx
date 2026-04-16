@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { openCalendlyPopup } from '../components/BookDemo';
 import { motion, useInView } from 'motion/react';
 import { Mail, Phone, Clock, MapPin } from 'lucide-react';
 
@@ -135,7 +136,7 @@ export function Contact() {
                 <div className="glass-card rounded-xl p-6 bg-primary/10 border-primary/30">
                   <p className="text-sm text-center">
                     Prefer a live walkthrough?{' '}
-                    <a href="https://app.hospitalistnetwork.com" className="text-primary font-semibold hover:underline">Book a Demo \u2192</a>
+                    <button onClick={openCalendlyPopup} className="text-primary font-semibold hover:underline">Book a Demo →</button>
                   </p>
                 </div>
               </div>

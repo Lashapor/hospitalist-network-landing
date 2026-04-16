@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { Link } from 'react-router';
+import { openCalendlyPopup } from '../components/BookDemo';
 import { motion, useInView } from 'motion/react';
 import { Check } from 'lucide-react';
 import * as Accordion from '@radix-ui/react-accordion';
@@ -68,7 +69,7 @@ export function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contact" className="block text-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold emerald-glow hover:scale-105 transition-all">Book a Demo</Link>
+                <button onClick={openCalendlyPopup} className="block w-full text-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold emerald-glow hover:scale-105 transition-all">Book a Demo</button>
               </div>
             </AnimatedSection>
 
@@ -137,7 +138,7 @@ export function Pricing() {
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Not sure which plan?</h2>
             <p className="text-lg text-muted-foreground mb-8">Book a demo and we'll help you find the right fit for your organization</p>
-            <Link to="/contact" className="inline-flex px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all">Book a Demo</Link>
+            <button onClick={openCalendlyPopup} className="inline-flex px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all">Book a Demo</button>
           </AnimatedSection>
         </div>
       </section>

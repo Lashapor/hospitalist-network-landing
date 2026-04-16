@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import { Linkedin, Twitter } from 'lucide-react';
 import logo from '../../imports/symbol_1_light_bg.svg';
+import { openCalendlyPopup } from './BookDemo';
 
 export function Footer() {
   return (
@@ -32,13 +33,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <button
+                  onClick={openCalendlyPopup}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors text-left"
+                >
                   Book a Demo
-                </Link>
+                </button>
               </li>
               <li>
                 <a
-                  href="https://app.hospitalistnetwork.com"
+                  href="https://hospitalist-network.vercel.app"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Open Portal
@@ -98,7 +102,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            © 2024 Hospitalist Network. All rights reserved.
+            © {new Date().getFullYear()} Hospitalist Network. All rights reserved.
           </p>
           
           <div className="flex items-center gap-6">

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
+import { openCalendlyPopup } from '../components/BookDemo';
 import { motion, useInView, useAnimation } from 'motion/react';
 import {
   MapPin,
@@ -114,14 +115,14 @@ export function Home() {
 
             <AnimatedSection delay={0.3}>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-                <Link
-                  to="/contact"
+                <button
+                  onClick={openCalendlyPopup}
                   className="px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all"
                 >
                   Book Your Demo
-                </Link>
+                </button>
                 <a
-                  href="https://app.hospitalistnetwork.com"
+                  href="https://hospitalist-network.vercel.app"
                   className="px-8 py-4 border border-border rounded-xl font-semibold hover:border-primary hover:text-primary transition-all"
                 >
                   Explore the Portal →
@@ -500,14 +501,14 @@ export function Home() {
               faster and for less.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-              <Link
-                to="/contact"
+              <button
+                onClick={openCalendlyPopup}
                 className="px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all"
               >
                 Book Your Demo
-              </Link>
+              </button>
               <a
-                href="https://app.hospitalistnetwork.com"
+                href="https://hospitalist-network.vercel.app"
                 className="px-8 py-4 border border-border rounded-xl font-semibold hover:border-primary hover:text-primary transition-all"
               >
                 Open the Portal →
@@ -557,7 +558,7 @@ export function Home() {
           <AnimatedSection delay={0.3}>
             <div className="text-center">
               <a
-                href="https://app.hospitalistnetwork.com"
+                href="https://hospitalist-network.vercel.app"
                 className="inline-flex px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all"
               >
                 Join as a Physician →
@@ -642,15 +643,15 @@ export function Home() {
             <p className="text-lg text-muted-foreground mb-8">
               See why hospital systems are switching to intelligence-driven hospitalist recruitment.
             </p>
-            <Link
-              to="/contact"
+            <button
+              onClick={openCalendlyPopup}
               className="inline-flex px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all mb-4"
             >
               Book Your Free Demo →
-            </Link>
+            </button>
             <p className="text-sm text-muted-foreground">
               Or explore the portal now \u2014{' '}
-              <a href="https://app.hospitalistnetwork.com" className="text-primary hover:underline">
+              <a href="https://hospitalist-network.vercel.app" className="text-primary hover:underline">
                 Open Hospitalist Network →
               </a>
             </p>

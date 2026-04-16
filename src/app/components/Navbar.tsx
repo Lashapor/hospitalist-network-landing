@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import { Menu, X } from 'lucide-react';
+import { openCalendlyPopup } from './BookDemo';
 import { motion, AnimatePresence } from 'motion/react';
 import logo from '../../imports/symbol_1_light_bg.svg';
 
@@ -54,14 +55,14 @@ export function Navbar() {
 
           {/* CTAs */}
           <div className="hidden md:flex items-center gap-3">
-            <Link
-              to="/contact"
+            <button
+              onClick={openCalendlyPopup}
               className="px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary/10 transition-all"
             >
               Book a Demo
-            </Link>
+            </button>
             <a
-              href="https://app.hospitalistnetwork.com"
+              href="https://hospitalist-network.vercel.app"
               className="px-4 py-2 text-sm bg-primary text-primary-foreground rounded-lg emerald-glow-hover transition-all hover:scale-105"
             >
               Open Portal →
@@ -100,15 +101,14 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="pt-4 space-y-3 border-t border-border/50">
-                <Link
-                  to="/contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-center px-4 py-2 text-sm border border-primary text-primary rounded-lg"
+                <button
+                  onClick={() => { setIsMobileMenuOpen(false); openCalendlyPopup(); }}
+                  className="block w-full text-center px-4 py-2 text-sm border border-primary text-primary rounded-lg"
                 >
                   Book a Demo
-                </Link>
+                </button>
                 <a
-                  href="https://app.hospitalistnetwork.com"
+                  href="https://hospitalist-network.vercel.app"
                   className="block text-center px-4 py-2 text-sm bg-primary text-primary-foreground rounded-lg"
                 >
                   Open Portal →

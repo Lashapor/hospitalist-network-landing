@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { Link } from 'react-router';
+import { openCalendlyPopup } from '../components/BookDemo';
 import { motion, useInView } from 'motion/react';
 import { Target, TrendingUp, Zap, Users } from 'lucide-react';
 
@@ -176,14 +177,14 @@ export function About() {
               Join the hospital systems transforming their staffing strategy
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                to="/contact"
+              <button
+                onClick={openCalendlyPopup}
                 className="px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all"
               >
                 Book a Demo
-              </Link>
+              </button>
               <a
-                href="https://app.hospitalistnetwork.com"
+                href="https://hospitalist-network.vercel.app"
                 className="px-8 py-4 border border-border rounded-xl font-semibold hover:border-primary hover:text-primary transition-all"
               >
                 Explore the Portal →
