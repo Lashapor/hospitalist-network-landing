@@ -67,7 +67,7 @@ export function Privacy() {
               </Section>
 
               <Section title="4. HIPAA Compliance">
-                <p>Hospitalist Network operates as a Business Associate under HIPAA. We maintain appropriate administrative, physical, and technical safeguards to protect the confidentiality, integrity, and availability of protected health information (PHI).</p>
+                <p>The Hospitalist Network operates as a Business Associate under HIPAA. We maintain appropriate administrative, physical, and technical safeguards to protect the confidentiality, integrity, and availability of protected health information (PHI).</p>
                 <p>We do not sell, share, or disclose PHI to third parties except as required by law or as permitted under our Business Associate Agreements with covered entities.</p>
               </Section>
 

@@ -3,7 +3,7 @@
 :root {
   --font-size: 16px;
   
-  /* Hospitalist Network Dark Theme */
+  /* The Hospitalist Network Dark Theme */
   --background: hsl(222 47% 6%); /* #0A0F1C - deep navy/near-black */
   --card: hsl(222 44% 9%); /* #111827 - card surfaces */
   --foreground: hsl(210 20% 92%); /* #E5E7EB - primary text */

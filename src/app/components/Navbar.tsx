@@ -36,7 +36,7 @@ export function Navbar() {
           <Link to="/" className="flex items-center gap-3 group">
             <img src={logo} alt="Hospitalist Network" className="h-8 md:h-10 w-auto" />
             <span className="font-bold text-sm md:text-base hidden sm:inline">
-              Hospitalist Network
+              The Hospitalist Network
             </span>
           </Link>
 

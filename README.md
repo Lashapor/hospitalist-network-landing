@@ -1,4 +1,4 @@
-# Hospitalist Network Landing Site
+# The Hospitalist Network Landing Site
 
 A multi-page dark-themed landing site for **Hospitalist Network**, a healthcare SaaS platform for hospital staffing and physician recruitment.
 

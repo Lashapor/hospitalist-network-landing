@@ -43,12 +43,12 @@ export function Terms() {
           <AnimatedSection delay={0.1}>
             <div className="glass-card rounded-xl p-8 md:p-12 space-y-8">
               <Section title="1. Acceptance of Terms">
-                <p>By accessing or using Hospitalist Network ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these Terms, you may not use the Service.</p>
+                <p>By accessing or using The Hospitalist Network ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these Terms, you may not use the Service.</p>
                 <p>These Terms apply to all users of the Service, including hospital systems, health networks, physicians, and any other users (collectively, "Users").</p>
               </Section>
 
               <Section title="2. Description of Service">
-                <p>Hospitalist Network is a SaaS platform that connects hospital systems with hospitalist physicians through AI-powered matching, readiness scoring, and deployment management tools. The Service includes the Hospitalist Physician Stability Index™ (HPSI™) scoring system, intelligence maps, readiness profiles, and related features.</p>
+                <p>The Hospitalist Network is a SaaS platform that connects hospital systems with hospitalist physicians through AI-powered matching, readiness scoring, and deployment management tools. The Service includes the Hospitalist Physician Stability Index™ (HPSI™) scoring system, intelligence maps, readiness profiles, and related features.</p>
               </Section>
 
               <Section title="3. User Accounts">
@@ -73,11 +73,11 @@ export function Terms() {
               </Section>
 
               <Section title="6. Intellectual Property">
-                <p>The Service, including the HPSI™ scoring methodology, readiness tier framework, and all related technology, are proprietary to Hospitalist Network, Inc. You may not copy, modify, reverse engineer, or create derivative works based on our proprietary systems.</p>
+                <p>The Service, including the HPSI™ scoring methodology, readiness tier framework, and all related technology, are proprietary to The Hospitalist Network, Inc. You may not copy, modify, reverse engineer, or create derivative works based on our proprietary systems.</p>
               </Section>
 
               <Section title="7. Limitation of Liability">
-                <p>Hospitalist Network is a matching and intelligence platform, not a staffing agency. We do not guarantee physician placement or employment outcomes. To the maximum extent permitted by law, Hospitalist Network shall not be liable for indirect, incidental, or consequential damages arising from use of the Service.</p>
+                <p>The Hospitalist Network is a matching and intelligence platform, not a staffing agency. We do not guarantee physician placement or employment outcomes. To the maximum extent permitted by law, The Hospitalist Network shall not be liable for indirect, incidental, or consequential damages arising from use of the Service.</p>
               </Section>
 
               <Section title="8. Termination">

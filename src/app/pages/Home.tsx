@@ -137,23 +137,6 @@ export function Home() {
         </div>
       </section>
 
-      {/* Social Proof Bar */}
-      <section className="py-12 md:py-16 bg-card/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-center text-sm text-muted-foreground mb-8 uppercase tracking-wider">
-            Trusted by leading health systems
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-40">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-              <div key={i} className="text-center text-muted-foreground">
-                <div className="h-12 flex items-center justify-center">
-                  <span className="text-sm font-semibold">Partner Hospital {i}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Problem → Solution */}
       <section className="py-20 md:py-32">
@@ -191,7 +174,7 @@ export function Home() {
                   <h2 className="text-2xl md:text-3xl font-bold">The Solution</h2>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Hospitalist Network gives you a pre-vetted, credentialed network with real-time
+                  The Hospitalist Network gives you a pre-vetted, credentialed network with real-time
                   readiness intelligence.
                 </p>
                 <div className="space-y-4">
@@ -412,7 +395,7 @@ export function Home() {
             {[
               {
               quote:
-                "Hospitalist Network reduced our time-to-fill from 90 days to under a week. The readiness profiles gave us confidence we'd never had with agency staffing.",
+                "The Hospitalist Network reduced our time-to-fill from 90 days to under a week. The readiness profiles gave us confidence we'd never had with agency staffing.",
               author: 'Dr. Sarah Mitchell',
               role: 'VP of Medical Affairs, Ascend Health System',
               },
@@ -424,7 +407,7 @@ export function Home() {
               },
               {
               quote:
-                'We saved $1.2M in our first year by replacing agency contracts with Hospitalist Network placements. The quality of physicians is consistently higher.',
+                'We saved $1.2M in our first year by replacing agency contracts with The Hospitalist Network placements. The quality of physicians is consistently higher.',
               author: 'Dr. Linda Carver',
               role: 'Director of Hospital Medicine, Westbrook Medical Center',
               },
@@ -455,7 +438,7 @@ export function Home() {
               Ready to Transform Your Hospitalist Staffing?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join 14+ hospital systems already using Hospitalist Network to deploy better physicians,
+              Join 14+ hospital systems already using The Hospitalist Network to deploy better physicians,
               faster and for less.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
@@ -530,7 +513,7 @@ export function Home() {
             {[
               {
                 q: 'What is the Hospitalist Network?',
-                a: 'Hospitalist Network is a healthcare recruitment intelligence platform that connects hospital systems with pre-vetted, credentialed hospitalist physicians. We provide real-time readiness data, AI-powered matching, and transparent deployment tracking.',
+                a: 'The Hospitalist Network is a healthcare recruitment intelligence platform that connects hospital systems with pre-vetted, credentialed hospitalist physicians. We provide real-time readiness data, AI-powered matching, and transparent deployment tracking.',
               },
               {
                 q: 'How is this different from a staffing agency?',
@@ -601,7 +584,7 @@ export function Home() {
             <p className="text-sm text-muted-foreground">
               Or explore the portal now -{' '}
               <PortalLink className="text-primary hover:underline">
-                Open Hospitalist Network →
+                Open The Hospitalist Network →
               </PortalLink>
             </p>
           </AnimatedSection>
