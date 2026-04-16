@@ -59,15 +59,15 @@ export function Blog() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post, idx) => (
               <AnimatedSection key={post.slug} delay={idx * 0.1}>
-                <Link to={`/blog/${post.slug}`} className="block group">
-                  <div className="glass-card rounded-xl overflow-hidden h-full hover:border-primary/50 transition-all">
-                    <div className="h-48 bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center">
+                <Link to={`/blog/${post.slug}`} className="block group h-full">
+                  <div className="glass-card rounded-xl overflow-hidden h-full flex flex-col hover:border-primary/50 transition-all">
+                    <div className="h-48 flex-shrink-0 bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center">
                       <span className="text-4xl opacity-50">{"\ud83d\udcca"}</span>
                     </div>
-                    <div className="p-6">
-                      <div className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-semibold rounded-full mb-3">{post.category}</div>
+                    <div className="p-6 flex flex-col flex-1">
+                      <div className="self-start px-3 py-1 bg-primary/20 text-primary text-xs font-semibold rounded-full mb-3">{post.category}</div>
                       <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">{post.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">{post.excerpt}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">{post.excerpt}</p>
                       <div className="flex items-center justify-between pt-4 border-t border-border/50">
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs font-semibold text-primary">

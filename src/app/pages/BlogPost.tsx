@@ -81,10 +81,10 @@ export function BlogPost() {
               <div className="glass-card rounded-xl p-8 mb-8">
                 <p className="text-muted-foreground leading-relaxed mb-4">A 250-bed community hospital in the Midwest was spending $2.8M annually on agency hospitalists (8 FTE equivalents at $175/hr average). After transitioning to a direct network model with readiness-scored physicians, they:</p>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-muted-foreground">{"\u2705"} Reduced per-physician cost to $133/hr (24% savings)</li>
-                  <li className="text-muted-foreground">{"\u2705"} Cut deployment time from 67 days to 9 days</li>
-                  <li className="text-muted-foreground">{"\u2705"} Improved HPSI scores by 15 points</li>
-                  <li className="text-muted-foreground">{"\u2705"} Annual savings: $1.1M</li>
+                  <li className="text-muted-foreground"> Reduced per-physician cost to $133/hr (24% savings)</li>
+                  <li className="text-muted-foreground"> Cut deployment time from 67 days to 9 days</li>
+                  <li className="text-muted-foreground"> Improved HPSI scores by 15 points</li>
+                  <li className="text-muted-foreground"> Annual savings: $1.1M</li>
                 </ul>
               </div>
 
