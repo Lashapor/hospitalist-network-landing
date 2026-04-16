@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { openCalendlyPopup } from '../components/BookDemo';
+import { PortalLink } from '../components/PortalLink';
 import { motion, useInView, useAnimation } from 'motion/react';
 import {
   MapPin,
@@ -121,12 +122,9 @@ export function Home() {
                 >
                   Book Your Demo
                 </button>
-                <a
-                  href="https://hospitalist-network.vercel.app"
-                  className="px-8 py-4 border border-border rounded-xl font-semibold hover:border-primary hover:text-primary transition-all"
-                >
+                <PortalLink className="px-8 py-4 border border-border rounded-xl font-semibold hover:border-primary hover:text-primary transition-all">
                   Explore the Portal →
-                </a>
+                </PortalLink>
               </div>
             </AnimatedSection>
 
@@ -380,58 +378,19 @@ export function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              {
-                tier: 'Stabilization Ready',
-                color: 'primary',
-                emoji: '\ud83d\udfe2',
-                description:
-                  'Elite physicians for culture resets, site launches, and critical stabilization. Highest credentialing standards, leadership experience, maximum flexibility.',
-                percentage: '18% of network (22 physicians)',
-              },
-              {
-                tier: 'Leadership Ready',
-                color: 'gold',
-                emoji: '\ud83d\udfe1',
-                description:
-                  'Prepared for mentorship, medical director roles, and program development. Advanced clinical skills with proven team leadership.',
-                percentage: '34% of network (42 physicians)',
-              },
-              {
-                tier: 'Network Ready',
-                color: 'blue',
-                emoji: '\ud83d\udd35',
-                description:
-                  'Vetted hospitalists for high-quality standard coverage. Board-certified, multi-state licensed, EMR-proficient, and schedule-flexible.',
-                percentage: '48% of network (60 physicians)',
-              },
+              { tier: 'Stabilization Ready', color: 'primary', emoji: '🟢', description: 'Elite physicians for culture resets, site launches, and critical stabilization.', percentage: '18% of network (22 physicians)' },
+              { tier: 'Leadership Ready', color: 'gold', emoji: '🟡', description: 'Prepared for mentorship, medical director roles, and program development.', percentage: '34% of network (42 physicians)' },
+              { tier: 'Network Ready', color: 'blue', emoji: '🔵', description: 'Vetted hospitalists for high-quality standard coverage.', percentage: '48% of network (60 physicians)' },
             ].map((tier, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.1}>
-                <div
-                  className={`glass-card rounded-xl p-6 border-2 ${
-                    tier.color === 'primary'
-                      ? 'border-primary'
-                      : tier.color === 'gold'
-                      ? 'border-[hsl(45,93%,58%)]'
-                      : 'border-[hsl(210,100%,56%)]'
-                  }`}
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-2xl">{tier.emoji}</span>
-                    <h3
-                      className={`text-xl font-semibold ${
-                        tier.color === 'primary'
-                          ? 'text-primary'
-                          : tier.color === 'gold'
-                          ? 'gradient-text-gold'
-                          : 'text-[hsl(210,100%,56%)]'
-                      }`}
-                    >
-                      {tier.tier}
-                    </h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{tier.description}</p>
-                  <p className="text-xs text-muted-foreground font-semibold">{tier.percentage}</p>
+              <div className={`glass-card rounded-xl p-6 border-2 ${tier.color === 'primary' ? 'border-primary' : tier.color === 'gold' ? 'border-[hsl(45,93%,58%)]' : 'border-[hsl(210,100%,56%)]'}`}>
+                <div className="flex items-center gap-3 mb-3">
+                <span className="text-2xl">{tier.emoji}</span>
+                <h3 className={`text-xl font-semibold ${tier.color === 'primary' ? 'text-primary' : tier.color === 'gold' ? 'gradient-text-gold' : 'text-[hsl(210,100%,56%)]'}`}>{tier.tier}</h3>
                 </div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-3">{tier.description}</p>
+                <p className="text-xs text-muted-foreground font-semibold">{tier.percentage}</p>
+              </div>
               </AnimatedSection>
             ))}
           </div>
@@ -452,35 +411,35 @@ export function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                quote:
-                  "Hospitalist Network reduced our time-to-fill from 90 days to under a week. The readiness profiles gave us confidence we'd never had with agency staffing.",
-                author: '[Name]',
-                role: 'VP of Medical Affairs, [Hospital System]',
+              quote:
+                "Hospitalist Network reduced our time-to-fill from 90 days to under a week. The readiness profiles gave us confidence we'd never had with agency staffing.",
+              author: 'Dr. Sarah Mitchell',
+              role: 'VP of Medical Affairs, Ascend Health System',
               },
               {
-                quote:
-                  'The intelligence map is a game-changer. We can see exactly which physicians are available, credentialed, and ready for our specific needs.',
-                author: '[Name]',
-                role: 'Chief Medical Officer, [Health System]',
+              quote:
+                'The intelligence map is a game-changer. We can see exactly which physicians are available, credentialed, and ready for our specific needs. Every hiring decision is now backed by real data.',
+              author: 'Dr. James Okafor',
+              role: 'Chief Medical Officer, Meridian Health',
               },
               {
-                quote:
-                  'We saved $1.2M in our first year by replacing agency contracts with Hospitalist Network placements. The quality of physicians is consistently higher.',
-                author: '[Name]',
-                role: 'Director of Hospital Medicine, [Medical Center]',
+              quote:
+                'We saved $1.2M in our first year by replacing agency contracts with Hospitalist Network placements. The quality of physicians is consistently higher.',
+              author: 'Dr. Linda Carver',
+              role: 'Director of Hospital Medicine, Westbrook Medical Center',
               },
             ].map((testimonial, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.1}>
-                <div className="glass-card rounded-xl p-6 h-full">
-                  <Quote size={32} className="text-primary mb-4 opacity-50" />
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="pt-4 border-t border-border/50">
-                    <p className="text-sm font-semibold">{testimonial.author}</p>
-                    <p className="text-xs text-muted-foreground">{testimonial.role}</p>
-                  </div>
+              <div className="glass-card rounded-xl p-6 h-full">
+                <Quote size={32} className="text-primary mb-4 opacity-50" />
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4 italic">
+                "{testimonial.quote}"
+                </p>
+                <div className="pt-4 border-t border-border/50">
+                <p className="text-sm font-semibold">{testimonial.author}</p>
+                <p className="text-xs text-muted-foreground">{testimonial.role}</p>
                 </div>
+              </div>
               </AnimatedSection>
             ))}
           </div>
@@ -506,16 +465,10 @@ export function Home() {
               >
                 Book Your Demo
               </button>
-              <a
-                href="https://hospitalist-network.vercel.app"
-                className="px-8 py-4 border border-border rounded-xl font-semibold hover:border-primary hover:text-primary transition-all"
-              >
+              <PortalLink className="px-8 py-4 border border-border rounded-xl font-semibold hover:border-primary hover:text-primary transition-all">
                 Open the Portal →
-              </a>
+              </PortalLink>
             </div>
-            <p className="text-sm text-muted-foreground">
-              HIPAA · SOC 2 · 256-bit encryption
-            </p>
           </AnimatedSection>
         </div>
       </section>
@@ -556,12 +509,9 @@ export function Home() {
 
           <AnimatedSection delay={0.3}>
             <div className="text-center">
-              <a
-                href="https://hospitalist-network.vercel.app"
-                className="inline-flex px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all"
-              >
+              <PortalLink className="inline-flex px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold emerald-glow hover:scale-105 transition-all">
                 Join as a Physician →
-              </a>
+              </PortalLink>
             </div>
           </AnimatedSection>
         </div>
@@ -650,9 +600,9 @@ export function Home() {
             </button>
             <p className="text-sm text-muted-foreground">
               Or explore the portal now -{' '}
-              <a href="https://hospitalist-network.vercel.app" className="text-primary hover:underline">
+              <PortalLink className="text-primary hover:underline">
                 Open Hospitalist Network →
-              </a>
+              </PortalLink>
             </p>
           </AnimatedSection>
         </div>

@@ -113,7 +113,7 @@ export function About() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Team</h2>
               <p className="text-lg text-muted-foreground">
-                Healthcare operators and technologists, united by a mission
+                Over 45 years of combined experience in healthcare advisory and consulting
               </p>
             </div>
           </AnimatedSection>
@@ -121,42 +121,34 @@ export function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: 'Dr. [Name]',
-                role: 'Chief Executive Officer',
-                bio: 'Former hospitalist and medical director with 15+ years in hospital medicine operations.',
+                name: 'Dr. Shiv P. Kalan, MD, MBA, CPE, FACP',
+                initials: 'SK',
+                role: 'Founder, President & CEO',
+                bio: 'Board-certified hospitalist with 12 years of frontline experience, leading HPSI assessments and driving data-driven program optimization as a former CMO.',
               },
               {
-                name: '[Name]',
-                role: 'Chief Medical Officer',
-                bio: 'Board-certified hospitalist specializing in hospital medicine quality and safety.',
+                name: 'Veevy Nguyen',
+                initials: 'VN',
+                role: 'VP of Client Relations & Physician Partnerships',
+                bio: 'Architects the trust-based relationships between hospital clients and the physician community, overseeing retention and long-term professional growth.',
               },
               {
-                name: '[Name]',
-                role: 'VP of Operations',
-                bio: 'Healthcare operations expert with background in credentialing and compliance.',
+                name: 'Lisa T. Miller, MHA',
+                initials: 'LM',
+                role: 'Executive Advisor & Head of Business Development',
+                bio: '25 years of hospital operations experience, bridging network capabilities to C-suite executives and leading strategic partnership development.',
               },
               {
-                name: '[Name]',
-                role: 'Head of Engineering',
-                bio: 'Formerly at Epic Systems, building healthcare infrastructure at scale.',
-              },
-              {
-                name: '[Name]',
-                role: 'Director of Physician Relations',
-                bio: 'Connecting physicians to opportunities for 10+ years in medical recruitment.',
-              },
-              {
-                name: '[Name]',
-                role: 'VP of Product',
-                bio: 'Healthcare SaaS product leader focused on intuitive, compliant user experiences.',
+                name: 'Mylan Em',
+                initials: 'ME',
+                role: 'Director of Credentialing & Licensing',
+                bio: 'Oversees the compliance and credentialing infrastructure enabling rapid, multi-state physician deployment that outpaces traditional staffing agencies.',
               },
             ].map((member, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.1}>
                 <div className="glass-card rounded-xl p-6 text-center">
                   <div className="w-24 h-24 rounded-full bg-primary/20 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-primary">
-                      {member.name.match(/\[([^\]]+)\]/)?.[1]?.[0] || 'N'}
-                    </span>
+                    <span className="text-3xl font-bold text-primary">{member.initials}</span>
                   </div>
                   <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
                   <p className="text-sm text-primary mb-3">{member.role}</p>

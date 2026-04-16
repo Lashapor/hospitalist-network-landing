@@ -43,7 +43,5 @@ npm run build
 
 ## Compliance
 
-- HIPAA compliant messaging throughout
-- SOC 2 Type II references
 - Cookie consent banner with localStorage persistence
 - Full Privacy Policy, Cookie Policy, and Terms of Service pages

@@ -85,7 +85,7 @@ export function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contact" className="block text-center px-6 py-3 border border-border rounded-lg font-semibold hover:border-primary hover:text-primary transition-all">Contact Sales</Link>
+                <button onClick={openCalendlyPopup} className="block w-full text-center px-6 py-3 border border-border rounded-lg font-semibold hover:border-primary hover:text-primary transition-all">Contact Sales</button>
               </div>
             </AnimatedSection>
           </div>
