@@ -25,7 +25,7 @@ export function BookDemo() {
       document.head.appendChild(link);
     }
 
-    // Inject Calendly script (no badge widget — popup only)
+    // Inject Calendly script (no badge widget - popup only)
     if (!document.querySelector('script[src*="calendly.com"]')) {
       const script = document.createElement('script');
       script.src = 'https://assets.calendly.com/assets/external/widget.js';

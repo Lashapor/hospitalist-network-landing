@@ -58,7 +58,7 @@ export function Privacy() {
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Provide, operate, and maintain the Service</li>
                   <li>Match hospital systems with qualified physicians</li>
-                  <li>Calculate and display Hospitalist Physician Stability Index\u2122 (HPSI\u2122) scores</li>
+                  <li>Calculate and display Hospitalist Physician Stability Index™ (HPSI™) scores</li>
                   <li>Process credential verification and readiness assessments</li>
                   <li>Send transactional communications and service updates</li>
                   <li>Improve and personalize the Service</li>

@@ -48,7 +48,7 @@ export function Terms() {
               </Section>
 
               <Section title="2. Description of Service">
-                <p>Hospitalist Network is a SaaS platform that connects hospital systems with hospitalist physicians through AI-powered matching, readiness scoring, and deployment management tools. The Service includes the Hospitalist Physician Stability Index\u2122 (HPSI\u2122) scoring system, intelligence maps, readiness profiles, and related features.</p>
+                <p>Hospitalist Network is a SaaS platform that connects hospital systems with hospitalist physicians through AI-powered matching, readiness scoring, and deployment management tools. The Service includes the Hospitalist Physician Stability Index™ (HPSI™) scoring system, intelligence maps, readiness profiles, and related features.</p>
               </Section>
 
               <Section title="3. User Accounts">
@@ -73,7 +73,7 @@ export function Terms() {
               </Section>
 
               <Section title="6. Intellectual Property">
-                <p>The Service, including the HPSI\u2122 scoring methodology, readiness tier framework, and all related technology, are proprietary to Hospitalist Network, Inc. You may not copy, modify, reverse engineer, or create derivative works based on our proprietary systems.</p>
+                <p>The Service, including the HPSI™ scoring methodology, readiness tier framework, and all related technology, are proprietary to Hospitalist Network, Inc. You may not copy, modify, reverse engineer, or create derivative works based on our proprietary systems.</p>
               </Section>
 
               <Section title="7. Limitation of Liability">

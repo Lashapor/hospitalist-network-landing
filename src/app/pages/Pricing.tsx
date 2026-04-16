@@ -122,7 +122,7 @@ export function Pricing() {
                   <Accordion.Header>
                     <Accordion.Trigger className="w-full px-6 py-4 text-left font-semibold flex items-center justify-between hover:text-primary transition-colors group">
                       {faq.q}
-                      <span className="text-muted-foreground group-data-[state=open]:rotate-180 transition-transform">\u25bc</span>
+                      <span className="text-muted-foreground group-data-[state=open]:rotate-180 transition-transform">▼</span>
                     </Accordion.Trigger>
                   </Accordion.Header>
                   <Accordion.Content className="px-6 pb-4 text-sm text-muted-foreground leading-relaxed">{faq.a}</Accordion.Content>

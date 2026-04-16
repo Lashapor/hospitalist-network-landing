@@ -98,7 +98,7 @@ export function BlogPost() {
 
               <div className="glass-card rounded-xl p-8 bg-primary/10 border-primary/30 mt-12">
                 <h3 className="text-xl font-bold mb-3">Want to see this intelligence in action?</h3>
-                <p className="text-muted-foreground mb-4">Hospitalist Network provides the infrastructure for hospitals to access pre-vetted physicians with transparent readiness data\u2014cutting costs and deployment time.</p>
+                <p className="text-muted-foreground mb-4">Hospitalist Network provides the infrastructure for hospitals to access pre-vetted physicians with transparent readiness data-cutting costs and deployment time.</p>
                 <button onClick={openCalendlyPopup} className="inline-flex px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold emerald-glow-hover hover:scale-105 transition-all">Book a Demo →</button>
               </div>
             </div>

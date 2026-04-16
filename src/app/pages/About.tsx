@@ -31,7 +31,7 @@ export function About() {
               About <span className="gradient-text-emerald">Hospitalist Network</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              We're building the intelligence layer between hospitals and hospitalist physicians —
+              We're building the intelligence layer between hospitals and hospitalist physicians -
               replacing opaque agency models with transparent, data-driven recruitment.
             </p>
           </AnimatedSection>

@@ -109,7 +109,7 @@ export function Home() {
             <AnimatedSection delay={0.2}>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
                 Stop guessing. Start deploying. Our AI-powered network matches credentialed hospitalists
-                to your facility in days — not months. Real readiness data. Zero agency markup.
+                to your facility in days - not months. Real readiness data. Zero agency markup.
               </p>
             </AnimatedSection>
 
@@ -367,7 +367,7 @@ export function Home() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-4 block">
-                PHYSICIAN READINESS PROFILE\u2122
+                PHYSICIAN READINESS PROFILE™
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Three Tiers of <span className="gradient-text-emerald">Deployment Readiness</span>
@@ -534,7 +534,7 @@ export function Home() {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Join the Hospitalist Network to access curated job postings matched to your credentials,
-                licensure, and preferences. See your match score, express interest, and get placed — all
+                licensure, and preferences. See your match score, express interest, and get placed - all
                 without the agency middleman.
               </p>
             </div>
@@ -618,7 +618,7 @@ export function Home() {
                     <Accordion.Trigger className="w-full px-6 py-4 text-left font-semibold flex items-center justify-between hover:text-primary transition-colors group">
                       {faq.q}
                       <span className="text-muted-foreground group-data-[state=open]:rotate-180 transition-transform">
-                        \u25bc
+                        ▼
                       </span>
                     </Accordion.Trigger>
                   </Accordion.Header>
@@ -650,7 +650,7 @@ export function Home() {
               Book Your Free Demo →
             </button>
             <p className="text-sm text-muted-foreground">
-              Or explore the portal now \u2014{' '}
+              Or explore the portal now -{' '}
               <a href="https://hospitalist-network.vercel.app" className="text-primary hover:underline">
                 Open Hospitalist Network →
               </a>

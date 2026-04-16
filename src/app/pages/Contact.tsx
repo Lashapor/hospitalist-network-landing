@@ -117,8 +117,8 @@ export function Contact() {
                     <div className="p-3 bg-primary/20 rounded-lg"><Clock size={24} className="text-primary" /></div>
                     <div>
                       <h3 className="font-semibold mb-1">Business Hours</h3>
-                      <p className="text-sm text-muted-foreground">Monday \u2013 Friday</p>
-                      <p className="text-sm text-muted-foreground">8:00 AM \u2013 6:00 PM ET</p>
+                      <p className="text-sm text-muted-foreground">Monday – Friday</p>
+                      <p className="text-sm text-muted-foreground">8:00 AM – 6:00 PM ET</p>
                     </div>
                   </div>
                 </div>
