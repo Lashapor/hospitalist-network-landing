@@ -169,8 +169,7 @@ export function Home() {
                   <h2 className="text-2xl md:text-3xl font-bold">The Crisis</h2>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  78% of hospitals report hospitalist staffing shortages. Agency costs have risen 340%
-                  since 2020. Traditional recruitment takes 90–120 days per placement.
+                  78% of hospitals face staffing shortages. Agency costs are up 340%. Traditional recruitment takes 90–120 days.
                 </p>
                 <div className="space-y-4">
                   {[

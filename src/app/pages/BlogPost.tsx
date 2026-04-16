@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { Link, useParams } from 'react-router';
 import { motion, useInView } from 'motion/react';
 import { Clock, ArrowLeft } from 'lucide-react';
+import { openCalendlyPopup } from './../components/BookDemo';
 
 function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null);

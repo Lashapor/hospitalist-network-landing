@@ -10,7 +10,6 @@ import { Blog } from "./pages/Blog";
 import { BlogPost } from "./pages/BlogPost";
 import { Terms } from "./pages/Terms";
 import { NotFound } from "./pages/NotFound";
-import { BookDemoPage } from "./pages/BookDemoPage";
 
 export const router = createBrowserRouter([
   {
@@ -26,7 +25,6 @@ export const router = createBrowserRouter([
       { path: "blog", Component: Blog },
       { path: "blog/:slug", Component: BlogPost },
       { path: "terms", Component: Terms },
-      { path: "book-demo", Component: BookDemoPage },
       { path: "*", Component: NotFound },
     ],
   },
